@@ -9,7 +9,6 @@ class CameraPublisherLoop : public rclcpp::Node
 private:
     cv::VideoCapture cap_;
     image_transport::Publisher publisher_;
-    std::string topic_name_;
     int camera_device_;
 
 public:
